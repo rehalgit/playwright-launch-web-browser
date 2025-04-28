@@ -9,6 +9,6 @@ test('dropdown', async ({page})=>
    const dropdown =page.locator ("select[class='form-control']");
    await dropdown.selectOption("consult");
    console.log(await dropdown.textContent())
-   await page.waitForTimeout(2000)
+   await page.waitForTimeout(3000)
    await expect(dropdown).toHaveValue(dropdownvalue);
 });
